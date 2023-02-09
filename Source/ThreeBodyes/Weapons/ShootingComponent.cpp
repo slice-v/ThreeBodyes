@@ -36,6 +36,11 @@ void UShootingComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAc
 
 void UShootingComponent::Shoot()
 {
+	FActorSpawnParameters actorSpawnParameters;
+	FTransform spawnTransform;
+	spawnTransform.SetLocation(GetOwner()->GetActorLocation());
+	GetWorld()->SpawnActor<ABaseProjectile>(BaseProjectileClass, spawnTransform, actorSpawnParameters);
+
 	UE_LOG(LogTemp, Log, TEXT("Shooting"));
 }
 

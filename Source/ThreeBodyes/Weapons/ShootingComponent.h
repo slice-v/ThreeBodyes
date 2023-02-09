@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "BaseProjectile.h"
 #include "ShootingComponent.generated.h"
 
 
@@ -24,8 +25,13 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-
 	UFUNCTION()
     void Shoot();
+
+	//Components
+public:
+
+	UPROPERTY(EditAnywhere, Category = "Shoot")
+	TSubclassOf<ABaseProjectile> BaseProjectileClass;
 		
 };
