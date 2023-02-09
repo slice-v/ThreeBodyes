@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ThreeBodyes.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{85CAA90F-9CA6-4198-B187-07257A2A482D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ThreeBodyes.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ThreeBodyesEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{3821B702-E538-4519-86EA-9CC31FAC34B9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ThreeBodyes">
+      <UniqueIdentifier>{FAAA7B3B-BC2B-409D-B86F-707710AFF286}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ThreeBodyes\ThreeBodyes.Build.cs">
+      <Filter>Source\ThreeBodyes</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ThreeBodyes\ThreeBodyes.cpp">
+      <Filter>Source\ThreeBodyes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThreeBodyes\ThreeBodyes.h">
+      <Filter>Source\ThreeBodyes</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThreeBodyes\ThreeBodyesGameModeBase.cpp">
+      <Filter>Source\ThreeBodyes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThreeBodyes\ThreeBodyesGameModeBase.h">
+      <Filter>Source\ThreeBodyes</Filter>
+    </ClInclude>
+    <Filter Include="Source\ThreeBodyes\StarShips">
+      <UniqueIdentifier>{E14B576F-A138-4F71-A41B-C84BF30CB58B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ThreeBodyes\StarShips\ScoutShip.cpp">
+      <Filter>Source\ThreeBodyes\StarShips</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThreeBodyes\StarShips\ScoutShip.h">
+      <Filter>Source\ThreeBodyes\StarShips</Filter>
+    </ClInclude>
+    <Filter Include="Source\ThreeBodyes\Weapons">
+      <UniqueIdentifier>{602329EB-7706-4736-861A-DFFBAB15E416}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ThreeBodyes\Weapons\BaseProjectile.cpp">
+      <Filter>Source\ThreeBodyes\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThreeBodyes\Weapons\BaseProjectile.h">
+      <Filter>Source\ThreeBodyes\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThreeBodyes\Weapons\ShootingComponent.cpp">
+      <Filter>Source\ThreeBodyes\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThreeBodyes\Weapons\ShootingComponent.h">
+      <Filter>Source\ThreeBodyes\Weapons</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

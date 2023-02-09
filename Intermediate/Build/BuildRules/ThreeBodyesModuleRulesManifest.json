@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Projects\\Unreal\\ThreeBodyes\\Source\\ThreeBodyes\\ThreeBodyes.Build.cs",
+		"D:\\Projects\\Unreal\\ThreeBodyes\\Source\\ThreeBodyes.Target.cs",
+		"D:\\Projects\\Unreal\\ThreeBodyes\\Source\\ThreeBodyesEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

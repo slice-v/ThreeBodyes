@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ThreeBodyes",
+			"Path": "D:\\Projects\\Unreal\\ThreeBodyes\\Source\\ThreeBodyes.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ThreeBodyesEditor",
+			"Path": "D:\\Projects\\Unreal\\ThreeBodyes\\Source\\ThreeBodyesEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

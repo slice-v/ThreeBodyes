@@ -1,0 +1,3 @@
+D:\Projects\Unreal\ThreeBodyes\Intermediate\Build\Win64\UE4Editor\Development\ThreeBodyes\Definitions.ThreeBodyes.h
+D:\Projects\Unreal\ThreeBodyes\Source\ThreeBodyes\Weapons\ShootingComponent.h
+D:\Projects\Unreal\ThreeBodyes\Intermediate\Build\Win64\UE4Editor\Inc\ThreeBodyes\ShootingComponent.generated.h
