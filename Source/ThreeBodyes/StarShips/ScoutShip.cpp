@@ -17,13 +17,9 @@ AScoutShip::AScoutShip()
 	scoutShipStaticMesh->SetupAttachment(RootComponent);
 
 	scoutShipMovement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("scoutShipMovement"));
-				
-	scoutShipSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("scoutSipSpringArm"));
-	scoutShipSpringArm->SetupAttachment(RootComponent);
-
+	
 	scoutShipCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("scoutShipCamera"));
-	scoutShipCamera->SetupAttachment(scoutShipSpringArm);
-
+	
 	//Add  Shooting Component
 	shootingComponent = CreateDefaultSubobject<UShootingComponent>(TEXT("ShootingComponent"));
 

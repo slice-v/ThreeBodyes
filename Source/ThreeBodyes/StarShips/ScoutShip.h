@@ -42,10 +42,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
 	UStaticMeshComponent* scoutShipStaticMesh;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-	USpringArmComponent* scoutShipSpringArm;
-	
+			
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
 	UCameraComponent* scoutShipCamera;
 	
