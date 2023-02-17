@@ -8,7 +8,7 @@
 #include "ShootingComponent.generated.h"
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class THREEBODYES_API UShootingComponent : public UActorComponent
 {
 	GENERATED_BODY()

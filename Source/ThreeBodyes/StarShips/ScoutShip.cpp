@@ -7,7 +7,7 @@
 // Sets default values
 AScoutShip::AScoutShip()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	scoutShipCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("scoutShipCollision"));
@@ -17,19 +17,21 @@ AScoutShip::AScoutShip()
 	scoutShipStaticMesh->SetupAttachment(RootComponent);
 
 	scoutShipMovement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("scoutShipMovement"));
-	
+
 	scoutShipCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("scoutShipCamera"));
 	
 	//Add  Shooting Component
 	shootingComponent = CreateDefaultSubobject<UShootingComponent>(TEXT("ShootingComponent"));
 
-
 }
+
 
 // Called when the game starts or when spawned
 void AScoutShip::BeginPlay()
 {
 	Super::BeginPlay();
+
+
 	
 }
 
