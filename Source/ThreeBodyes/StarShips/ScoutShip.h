@@ -51,8 +51,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shoot")
 	UShootingComponent* shootingComponent;
-
-
+	
 private:
 		
 	UPROPERTY(EditAnywhere, Category = "Pawn")
