@@ -30,4 +30,7 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shoot")
 	UProjectileMovementComponent* projectileMovementComponent;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shoot")
+	float velocityCoefficient{ 1 };
+	
 };

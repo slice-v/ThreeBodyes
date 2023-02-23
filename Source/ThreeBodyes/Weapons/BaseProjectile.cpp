@@ -1,6 +1,3 @@
-//TODO: Implement projectile movement component
-//TODO: Add Collider to projectile
-
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
@@ -20,7 +17,6 @@ ABaseProjectile::ABaseProjectile()
 void ABaseProjectile::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame

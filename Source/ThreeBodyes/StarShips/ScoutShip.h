@@ -72,4 +72,7 @@ private:
 	UFUNCTION()
 	void Rotate(float value);
 
+	UFUNCTION()
+	void Shoot();
+
 };

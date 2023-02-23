@@ -49,7 +49,11 @@ void AScoutShip::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	PlayerInputComponent->BindAxis(TEXT("Move"), this, &AScoutShip::Move);
 	PlayerInputComponent->BindAxis(TEXT("Rotate"), this, &AScoutShip::Rotate);
 
-	PlayerInputComponent->BindAction(TEXT("Shoot"), EInputEvent::IE_Pressed, shootingComponent, &UShootingComponent::Shoot);
+
+	//Use delegate to pass param to method calling by reference
+	//DECLARE_DELEGATE_OneParam(FShootDelegate, const FVector);
+	//PlayerInputComponent->BindAction<FShootDelegate>(TEXT("Shoot"), EInputEvent::IE_Pressed, shootingComponent, &UShootingComponent::Shoot);
+	PlayerInputComponent->BindAction(TEXT("Shoot"), EInputEvent::IE_Pressed, this, &AScoutShip::Shoot);
 		
 }
 
@@ -62,7 +66,12 @@ void AScoutShip::Move(float value)
 void AScoutShip::Rotate(float value)
 {
 	AddControllerYawInput( value * yaw * GetWorld()->GetDeltaSeconds());
-	UE_LOG(LogTemp, Log, TEXT("** Rotation ** , value %f"), value / 10)
+	//UE_LOG(LogTemp, Log, TEXT("** Rotation ** , value %f"), value / 10)
+}
+
+void AScoutShip::Shoot()
+{
+	shootingComponent->Shoot(scoutShipMovement->Velocity);
 }
 
 
