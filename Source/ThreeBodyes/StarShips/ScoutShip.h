@@ -42,9 +42,6 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
 	UStaticMeshComponent* scoutShipStaticMesh;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-	USpringArmComponent* scoutShipSpringArm;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
 	UCameraComponent* scoutShipCamera;
@@ -52,11 +49,11 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
 	UFloatingPawnMovement* scoutShipMovement;
 
-private:
-
-	UPROPERTY(VisibleAnywhere, Category = "Shoot")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shoot")
 	UShootingComponent* shootingComponent;
 	
+private:
+		
 	UPROPERTY(EditAnywhere, Category = "Pawn")
 	int pitch = 0.0f;
 
