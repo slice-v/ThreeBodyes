@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 #include "BaseProjectile.generated.h"
 
 UCLASS()
@@ -23,4 +24,13 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	//Components:
+
+public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shoot")
+	UProjectileMovementComponent* projectileMovementComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shoot")
+	float velocityCoefficient{ 1 };
+	
 };

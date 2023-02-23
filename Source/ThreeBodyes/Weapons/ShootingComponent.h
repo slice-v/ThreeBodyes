@@ -24,14 +24,16 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
+		
 	UFUNCTION()
-    void Shoot();
+	void Shoot(const FVector initVelocity);
 
 	//Components
 public:
 
 	UPROPERTY(EditAnywhere, Category = "Shoot")
 	TSubclassOf<ABaseProjectile> BaseProjectileClass;
+
+
 		
 };

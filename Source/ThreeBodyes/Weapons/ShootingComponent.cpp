@@ -35,14 +35,15 @@ void UShootingComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAc
 	// ...
 }
 
-void UShootingComponent::Shoot()
+void UShootingComponent::Shoot(const FVector initVelocity)
 {
-	FActorSpawnParameters actorSpawnParameters;
+  	FActorSpawnParameters actorSpawnParameters;
 	FTransform spawnTransform;
 	spawnTransform.SetLocation(GetOwner()->GetActorLocation());
-	GetWorld()->SpawnActor<ABaseProjectile>(BaseProjectileClass, spawnTransform, actorSpawnParameters);
-
-	UE_LOG(LogTemp, Log, TEXT("Shooting"));
+	auto projectileTmp =  GetWorld()->SpawnActor<ABaseProjectile>(BaseProjectileClass, spawnTransform, actorSpawnParameters);
+	
+	projectileTmp->projectileMovementComponent->Velocity = initVelocity * projectileTmp->velocityCoefficient;
+	
 }
 
 
