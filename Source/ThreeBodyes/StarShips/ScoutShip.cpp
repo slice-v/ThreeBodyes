@@ -48,11 +48,7 @@ void AScoutShip::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	PlayerInputComponent->BindAxis(TEXT("Move"), this, &AScoutShip::Move);
 	PlayerInputComponent->BindAxis(TEXT("Rotate"), this, &AScoutShip::Rotate);
-
-
-	//Use delegate to pass param to method calling by reference
-	//DECLARE_DELEGATE_OneParam(FShootDelegate, const FVector);
-	//PlayerInputComponent->BindAction<FShootDelegate>(TEXT("Shoot"), EInputEvent::IE_Pressed, shootingComponent, &UShootingComponent::Shoot);
+			
 	PlayerInputComponent->BindAction(TEXT("Shoot"), EInputEvent::IE_Pressed, this, &AScoutShip::Shoot);
 		
 }
